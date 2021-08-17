@@ -22,7 +22,7 @@ export default {
 }
 .footer .footer__text {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 </style>

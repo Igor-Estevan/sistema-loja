@@ -1,5 +1,6 @@
 <template>
   <div class="card">
+    <img :src="image" alt="event-img" />
     <h2>{{ title }}</h2>
     <p>{{ value }}</p>
     <button>Fazer Pedido</button>
@@ -9,6 +10,7 @@
 export default {
   name: "Card",
   props: {
+    image: Image,
     title: String,
     value: String,
   },
@@ -24,6 +26,10 @@ export default {
   flex-direction: column;
   align-items: center;
 }
+.card img {
+  
+}
+
 .card h2 {
   font-size: 18px;
   font-weight: bold;

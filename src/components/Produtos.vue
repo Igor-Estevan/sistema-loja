@@ -11,7 +11,7 @@
       </div>
       <div class="row">
         <div v-for="event in eventsFiltered" :key="event.id" class="col-md-4">
-          <Card :title="event.title" :value="event.value" />
+          <Card :image="event.img"  :title="event.title" :value="event.value" />
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@ export default {
       events: [
         {
           id: 1,
-          //img: require("../assets/MONITOR GAMER ACER NITRO KG2 SERIES 27.jpg"),
+          img: require('../assets/MONITOR GAMER ACER NITRO KG2 SERIES 27.jpg'),
           title: "MONITOR GAMER ACER NITRO KG2 SERIES 27",
           value: "R$1.749,90",
         },
