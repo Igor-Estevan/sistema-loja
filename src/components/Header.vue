@@ -12,8 +12,8 @@
       </div>
       <nav class="menu">
         <ul>
-          <li><router-link to="/">Clientes</router-link></li>
-          <li><router-link to="/noticias">Pedidos</router-link></li>
+          <li><router-link to="/clientes">Clientes</router-link></li>
+          <li><router-link to="/pedidos">Pedidos</router-link></li>
         </ul>
       </nav>
     </div>

@@ -3,7 +3,7 @@
     <img :src="image" alt="event-img" />
     <h2>{{ title }}</h2>
     <p>{{ value }}</p>
-    <button>Fazer Pedido</button>
+    <router-link to="/pedido"><button>Fazer Pedido</button></router-link>
   </div>
 </template>
 <script>
@@ -27,7 +27,7 @@ export default {
   align-items: center;
 }
 .card img {
-  
+  width: 200px;
 }
 
 .card h2 {
@@ -36,7 +36,7 @@ export default {
   color: #000000;
 }
 .card p {
-  font-size: 14px;
+  font-size: 16px;
   color: #000000;
 }
 .card button {
@@ -46,5 +46,8 @@ export default {
   background-color: black;
   color: #ffffff;
   border: none;
+}
+.card button:hover {
+  background-color: darkgray;
 }
 </style>
