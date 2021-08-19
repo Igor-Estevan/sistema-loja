@@ -3,7 +3,7 @@
     <img :src="image" alt="event-img" />
     <h2>{{ title }}</h2>
     <p>{{ value }}</p>
-    <router-link to="/pedido"><button>Fazer Pedido</button></router-link>
+    <router-link to="/compra"><button>Fazer Pedido</button></router-link>
   </div>
 </template>
 <script>
@@ -48,6 +48,7 @@ export default {
   border: none;
 }
 .card button:hover {
+  cursor: pointer;
   background-color: darkgray;
 }
 </style>

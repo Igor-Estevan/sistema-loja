@@ -8,12 +8,16 @@
       </div>
       <div class="row">
         <div class="col-md-12 compra_img">
-          <img class="compra__image" src="../assets/store_logo.jpg" alt="" />
+          <img
+            class="compra__image"
+            src="../assets/MESA GAMER MANCER LEVIATÃ RGB.jpg"
+            alt=""
+          />
         </div>
       </div>
       <div class="row compra_title01">
         <div class="col-md-6 left-col">
-          <h2>Produto01</h2>
+          <h2>MESA GAMER MANCER LEVIATÃ RGB</h2>
           <h3>R${{ preco }}</h3>
         </div>
         <div class="col-md-6 right-col">
@@ -70,19 +74,19 @@
 
 <script>
 export default {
-  name: 'CalculoCompra',
-  data: function() {
+  name: "CalculoCompra",
+  data: function () {
     return {
-      preco: 10,
-      quantidade: null,
-      total: 0,
+      preco: 749.9,
+      quantidade: 1,
+      total: 749.9,
     };
   },
   methods: {
-    toCalculate: function() {
+    toCalculate: function () {
       return this.preco * this.quantidade;
     },
-    toChange: function() {
+    toChange: function () {
       if (this.quantidade < 0) {
         return this.preco * 0;
       }
@@ -93,12 +97,12 @@ export default {
 </script>
 
 <style>
-.produto {
+.compra {
   padding: 50px 0px;
-  background-color: #e2e2e2;
+  background-color: white;
   width: 100%;
 }
-.produto_img {
+.compra_img {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -118,7 +122,7 @@ export default {
   border: 1px solid green;
   transition: 0.5s ease;
 }
-.produto_title01 {
+.compra_title01 {
   padding-bottom: 15px;
   border-bottom: 1px solid #000000;
 }
@@ -127,24 +131,24 @@ export default {
   flex-direction: column;
   align-items: flex-end;
 }
-.calculo_total {
+.total {
   font-size: 22px;
 }
-.btn_compra {
+.button_compra {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.btn_finalizar {
-  padding: 15px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 10px;
-  border: 1px solid #000000;
+.button_finalizar {
+  width: 170px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: black;
+  color: #ffffff;
+  border: none;
 }
-.btn_finalizar:hover {
+.button_finalizar:hover {
   cursor: pointer;
-  background-color: rgb(98, 100, 94);
-  transition: 0.5s ease;
+  background-color: darkgray;
 }
 </style>

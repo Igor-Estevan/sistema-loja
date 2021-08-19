@@ -38,9 +38,9 @@ export default {
   margin-top: 10px;
 }
 .logo__img {
-  width: 180px;  
+  width: 180px;
   border-radius: 15px;
-  }
+}
 .header__text {
   color: white;
   font-size: 14px;
@@ -79,6 +79,6 @@ export default {
   margin-left: 10px;
 }
 .menu ul li:hover {
-  background-color:darkgray;
+  background-color: darkgray;
 }
 </style>

@@ -19,10 +19,11 @@ export default {
   background-color: #0a0a0a;
   width: 100%;
   height: 70px;
+  text-align: center;
 }
 .footer .footer__text {
   color: white;
   font-size: 16px;
-  text-align: center;
+  padding-top: 20px;
 }
 </style>
